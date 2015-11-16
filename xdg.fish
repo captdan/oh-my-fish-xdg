@@ -18,7 +18,7 @@ if available gem
 end
 
 if available git
-  set -x GIT_SSH_COMMAND "ssh -F $XDG_CONFIG_HOME/ssh/config 2>/dev/null"
+  set -x GIT_SSH_COMMAND "$XDG_CONFIG_HOME/ssh/gitssh"
 end
 
 if available gradle
